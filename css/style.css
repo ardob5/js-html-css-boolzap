@@ -18,7 +18,7 @@ body {
   height: 95vh;
   width: 80%;
   display: flex;
-  min-width: 1000px;
+  min-width: 800px;
 }
 
 .fa-user-circle {
@@ -161,6 +161,7 @@ body {
 
 /* RIGHT CONTENT */
 .right-content {
+  height: 100%;
   width: 70%;
 }
 
@@ -178,4 +179,34 @@ body {
 
 .details h2 {
   font-size: 0.9em;
+}
+
+/* RIGHT CHATBOX */
+.right-chatbox {
+  background-image: url("../img/background1.jpg");
+  height: calc(100% - 160px);
+}
+
+/* RIGHT TYPING MESSAGES */
+.right-type-messages {
+  background-color: #EAEAEA;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-bar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-bar input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(177,177,177);
 }
