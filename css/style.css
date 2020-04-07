@@ -39,14 +39,7 @@ body {
   cursor: pointer;
 }
 
-/* LEFT CONTENT */
-.left-content {
-  width: 30%;
-  height: 100%;
-  border-right: 1px solid rgb(177,177,177);
-}
-
-.left-header {
+.left-header, .right-header {
   height: 80px;
   width: 100%;
   padding: 10px;
@@ -56,12 +49,20 @@ body {
   align-items: center;
 }
 
-.left-icons {
+.left-icons, .right-icons {
   width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+/* LEFT CONTENT */
+.left-content {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid rgb(177,177,177);
+}
+
 
 /* NOTIFICATIONS */
 .left-notifications {
@@ -126,7 +127,6 @@ body {
 .left-chat-list {
   display: flex;
   flex-direction: column;
-  height: calc(100% - 230px);
   overflow-y: scroll;
   max-height: calc(100% - 230px);
 }
@@ -162,5 +162,20 @@ body {
 /* RIGHT CONTENT */
 .right-content {
   width: 70%;
-  background-color: red;
+}
+
+.right-img-profile {
+  display: flex;
+}
+
+.details {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.details h2 {
+  font-size: 0.9em;
 }
