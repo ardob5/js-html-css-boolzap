@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .main-content {
@@ -185,7 +186,46 @@ body {
 .right-chatbox {
   background-image: url("../img/background1.jpg");
   height: calc(100% - 160px);
+  padding: 35px;
 }
+
+.message-row {
+  display: flex;
+}
+
+.leftAlign {
+  justify-content: flex-start;
+}
+
+.rightAlign {
+  justify-content: flex-end;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 150px;
+  display: block;
+}
+
+.time {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  font-size: 0.7em;
+}
+
+.received {
+  background-color: #FFF;
+  float: left;
+}
+
+.sent {
+  background-color: #D5F9BA;
+}
+
+
 
 /* RIGHT TYPING MESSAGES */
 .right-type-messages {
