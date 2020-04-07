@@ -17,16 +17,149 @@ body {
 .main-content {
   height: 95vh;
   width: 80%;
-  border: 1px solid #000;
   display: flex;
+  min-width: 1000px;
 }
 
+.fa-user-circle {
+  font-size: 50px;
+  color: rgb(177,177,177);
+}
+
+.fa-user-circle:hover {
+  cursor: pointer;
+}
+
+.small-icons {
+  font-size: 20px;
+  color: rgb(177,177,177);
+}
+
+.small-icons:hover {
+  cursor: pointer;
+}
+
+/* LEFT CONTENT */
 .left-content {
   width: 30%;
   height: 100%;
-  background-color: blue;
+  border-right: 1px solid rgb(177,177,177);
 }
 
+.left-header {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* NOTIFICATIONS */
+.left-notifications {
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: #8EDAFC;
+  display: flex;
+  align-items: center;
+}
+
+.left-notifications > i {
+  background-color: #FFF;
+  border-radius: 100%;
+  font-size: 25px;
+  padding: 10px 8px;
+  margin-right: 15px;
+  color: #8EDAFC;
+}
+
+.left-notifications h2, p {
+  font-size: 0.9em;
+}
+
+.desktop-notifications > a {
+  color: #4F7485;
+}
+
+/* SEARCHBAR */
+.left-searchbar {
+  background-color: #f4f5f5;
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.search-chat {
+  width: 100%;
+  background-color: #FFF;
+  margin: 10px;
+  border: 1px solid rgb(177,177,177);
+  display: flex;
+  align-items: center;
+}
+
+.search-chat > i {
+  height: 100%;
+  padding: 6px 15px;
+  border-right: 1px solid rgb(177,177,177);
+  color: rgb(177,177,177);
+}
+
+.search-chat > input {
+  margin: 0 5px;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  color: rgb(177,177,177);
+}
+
+/* CHAT-LIST */
+.left-chat-list {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 230px);
+  overflow-y: scroll;
+  max-height: calc(100% - 230px);
+}
+
+.chat {
+  background-color: #f4f5f5;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.chat:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: #E9EBEB;
+}
+
+.chat > .chat-name {
+  margin-left: 10px;
+}
+
+.chat-name h2 {
+  font-size: 0.9em;
+}
+
+.chat-name p {
+  color: rgb(177,177,177);
+}
+
+/* RIGHT CONTENT */
 .right-content {
   width: 70%;
   background-color: red;
