@@ -148,6 +148,10 @@ body {
   background-color: #E9EBEB;
 }
 
+.chat.hide {
+  display: none;
+}
+
 .chat > .chat-name {
   margin-left: 10px;
 }
@@ -187,18 +191,13 @@ body {
   background-image: url("../img/background1.jpg");
   height: calc(100% - 160px);
   padding: 35px;
+  overflow-y: scroll;
 }
 
-.message-row {
-  display: flex;
-}
-
-.leftAlign {
-  justify-content: flex-start;
-}
-
-.rightAlign {
-  justify-content: flex-end;
+.right-chatbox::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .message {
@@ -218,11 +217,14 @@ body {
 
 .received {
   background-color: #FFF;
+  display: block;
   float: left;
 }
 
 .sent {
   background-color: #D5F9BA;
+  display: block;
+  float: right;
 }
 
 
