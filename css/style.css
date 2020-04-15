@@ -217,7 +217,7 @@ body {
   display: block;
 }
 
-.chat-right {
+.chat-right, .details {
   display: none;
 }
 

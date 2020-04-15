@@ -30,6 +30,8 @@ $(document).ready(function(){
       var dataAttr = $(this).data("conversation");
       $('.chat-right').removeClass("active");
       $('.chat-right[data-conversation="' + dataAttr + '"]').addClass("active");
+      $('.details').removeClass("active");
+      $('.details[data-conversation="' + dataAttr + '"]').addClass("active");
   });
 });
 
