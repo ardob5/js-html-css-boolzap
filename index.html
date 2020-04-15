@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -42,25 +44,25 @@
         </div>
         <!-- Chat List -->
         <div class="left-chat-list">
-          <div class="chat active">
+          <div class="chat selected" data-conversation="1">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
             <div class="chat-name">
-              <h2>Eduardo</h2>
+              <h2 class="contact-name">Eduardo</h2>
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="2">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
             <div class="chat-name">
-              <h2>Mario</h2>
+              <h2 class="contact-name">Mario</h2>
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="3">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -69,7 +71,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="4">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -78,7 +80,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="5">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -87,7 +89,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="6">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -96,7 +98,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="7">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -105,7 +107,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="8">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -114,7 +116,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="9">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -123,7 +125,7 @@
               <p>Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat">
+          <div class="chat" data-conversation="10">
             <div class="chat-img">
               <i class="fas fa-user-circle"></i>
             </div>
@@ -142,7 +144,7 @@
           <div class="right-img-profile">
             <i class="fas fa-user-circle"></i>
             <div class="details">
-              <h2>AlessandroSelezionato</h2>
+              <h2>UtenteSelezionato</h2>
               <p>Ultimo accesso oggi alle 12:49</p>
             </div>
           </div>
@@ -154,8 +156,22 @@
         </div>
         <!-- ChatBox -->
         <div class="right-chatbox">
-          <div class="message received">Ciao, come stai?<span class="time">9:55</span></div>
-          <div class="message sent">Ciao, come stai?<span class="time">9:55</span></div>
+          <div class="chat-right active" data-conversation="1">
+            <div class="row">
+              <div class="message received">Ciao, come stai?<span class="time">9:55</span></div>
+            </div>
+            <div class="row">
+              <div class="message sent col-md-3 offset-md-9">Ciao, come stai?<span class="time">9:55</span></div>
+            </div>
+          </div>
+          <div class="chat-right" data-conversation="2">
+            <div class="row">
+              <div class="message received">Mmmm come stai?<span class="time">9:55</span></div>
+            </div>
+            <div class="row">
+              <div class="message sent col-md-3 offset-md-9">Ciao, come stai?<span class="time">9:55</span></div>
+            </div>
+          </div>
         </div>
         <!-- Typing Messages -->
         <div class="right-type-messages">

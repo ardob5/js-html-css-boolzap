@@ -118,7 +118,6 @@ body {
 
 .search-chat > input {
   margin: 0 5px;
-  padding: 5px;
   width: 100%;
   border: none;
   color: rgb(177,177,177);
@@ -144,12 +143,8 @@ body {
   cursor: pointer;
 }
 
-.active {
+.selected {
   background-color: #E9EBEB;
-}
-
-.chat.hide {
-  display: none;
 }
 
 .chat > .chat-name {
@@ -194,17 +189,14 @@ body {
   overflow-y: scroll;
 }
 
-.right-chatbox::after {
-  content: "";
-  display: block;
-  clear: both;
+.row {
+  margin: 15px 0;
 }
 
 .message {
   padding: 15px;
   border-radius: 8px;
   position: relative;
-  max-width: 150px;
   display: block;
 }
 
@@ -218,13 +210,19 @@ body {
 .received {
   background-color: #FFF;
   display: block;
-  float: left;
 }
 
 .sent {
   background-color: #D5F9BA;
   display: block;
-  float: right;
+}
+
+.chat-right {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 
